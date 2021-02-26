@@ -5,6 +5,10 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/thedemosite", glue = "com.qa.thedemosite.stepdefs")
+@CucumberOptions(
+        features = "src/test/resources/features/thedemosite",
+        glue = "com.qa.thedemosite.stepdefs",
+        plugin = {"pretty"}
+)
 public class TheDemoSiteTest {
 }

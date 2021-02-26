@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features/shopping website",
-        glue = "com.qa.shoppingsite.stepdefs")
+        glue = "com.qa.shoppingsite.stepdefs",
+        plugin = {"pretty", "html:target/cucumber/reports/clothes-shop.html"})
 public class ShoppingSiteTest {
 }
